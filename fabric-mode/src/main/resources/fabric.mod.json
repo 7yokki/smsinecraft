@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "smsrelay",
+  "version": "${version}",
+  "name": "SMS Relay Client",
+  "description": "Client-side local world bootstrap and relay synchronization for the SMS coordination server.",
+  "authors": [
+    "smsinecraft"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.smsrelay.SmsRelayMod"
+    ]
+  },
+  "mixins": [
+    "smsrelay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
